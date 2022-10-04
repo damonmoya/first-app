@@ -1,10 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect } from 'react';
+import { useLogging } from './src/hooks/useLogging';
 
 export default function App() {
+  const [logging] = useLogging('Application');
+
+  useEffect(() => {
+    logging.info('Application started');
+  }, [logging]);
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>First App from Damon</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,7 +21,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
   },
