@@ -1,0 +1,11 @@
+{
+    "singleQuote": true,
+    "ptrintWidth": 200,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "proseWrap": "always",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "trailingComma": "none"
+}
